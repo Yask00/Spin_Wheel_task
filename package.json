@@ -1,0 +1,14 @@
+{
+  "name": "spin_wheel_task",
+  "version": "1.0.0",
+  "description": "Wrap element for the background and html ot top of it - parent should rotate\r     rotate to 30px 60px... depending on section",
+  "main": "script.js",
+  "scripts": {
+     "start": "live-server --port=8080 --entry-file=index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
