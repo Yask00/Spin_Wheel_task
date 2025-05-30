@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 16px;
@@ -9,12 +10,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .spinner {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    
     position: relative;
+}
+
+.spinner--fs {
+    box-shadow: 0px -2px 10px 10px rgba(25, 128, 31, 0.75);
 }
 
 .spinner__pointer {
@@ -62,210 +67,121 @@ body {
 }
 
 .spinner__section {
-	position: absolute;
+    position: absolute;
     width: 30px;
     height: 20px;
     text-align: center;
-}
-
-.spinner__section::before {
     font-size: 1.25rem;
     color: #fff;
 }
 
-.spinner__section:nth-child(1) {
-    left: 136px;
+.spinner__section[data-section-id="1"] {
+    left: 135px;
     top: 15px;
 }
 
-.spinner__section:nth-child(1)::before {
-    /* TODO: should be set thr js  */
-    content: "10";
-    /* transform: translate(-16%, -20%); */
-}
-
-.spinner__section:nth-child(2) {
+.spinner__section[data-section-id="2"] {
     transform: rotate(20deg);
-    left: 179px;
-    top: 22px;
+    left: 177px;
+    top: 24px;
 }
 
-.spinner__section:nth-child(2)::before {
-    content: "25";
+.spinner__section[data-section-id="3"] {
+    transform: rotate(40deg);
+    left: 214px;
+    top: 46px;
 }
 
-.spinner__section:nth-child(3) {
-    transform: rotate(43deg);
-    left: 218px;
-    top: 43px;
-}
-
-.spinner__section:nth-child(3)::before {
-    content: "15";
-}
-
-.spinner__section:nth-child(4) {
+.spinner__section[data-section-id="4"] {
     transform: rotate(60deg);
-    left: 247px;
-    top: 75px;
+    left: 242px;
+    top: 78px;
 }
 
-.spinner__section:nth-child(4)::before {
-    content: "30";
-}
-
-.spinner__section:nth-child(5) {
-    transform: rotate(78deg);
-    left: 262px;
-    top: 118px;
-}
-
-.spinner__section:nth-child(5)::before {
-    content: "20";
-}
-
-.spinner__section:nth-child(6) {
-    transform: rotate(99deg);
-    left: 263px;
-    top: 162px;
-}
-
-.spinner__section:nth-child(6)::before {
-    content: "50";
-}
-
-.spinner__section:nth-child(7) {
-    transform: rotate(125deg);
-    left: 249px;
-    top: 204px;
-}
-
-.spinner__section:nth-child(7)::before {
-    content: "10";
-}
-
-.spinner__section:nth-child(8) {
-    transform: rotate(139deg);
-    left: 220px;
-    top: 238px;
-}
-
-.spinner__section:nth-child(8)::before {
-    content: "25";
-}
-
-.spinner__section:nth-child(9) {
-    transform: rotate(156deg);
-    left: 180px;
-    top: 261px;
-}
-
-.spinner__section:nth-child(9)::before {
-    content: "15";
-}
-
-.spinner__section:nth-child(10) {
-    transform: rotate(181deg);
-    left: 136px;
-    top: 270px;
-}
-
-.spinner__section:nth-child(10)::before {
-    content: "30";
-}
-
-.spinner__section:nth-child(11) {
-    transform: rotate(204deg);
-    left: 92px;
-    top: 262px;
-}
-
-.spinner__section:nth-child(11)::before {
-    content: "20";
-}
-
-.spinner__section:nth-child(12) {
-    transform: rotate(221deg);
-    left: 53px;
-    top: 240px;
-}
-
-.spinner__section:nth-child(12)::before {
-    content: "100";
-}
-
-.spinner__section:nth-child(13) {
-    transform: rotate(239deg);
-    left: 24px;
-    top: 206px;
-}
-
-.spinner__section:nth-child(13)::before {
-    content: "10";
-}
-
-.spinner__section:nth-child(14) {
-    transform: rotate(261deg);
-    left: 9px;
-    top: 164px;
-}
-
-.spinner__section:nth-child(14)::before {
-    content: "25";
-}
-
-.spinner__section:nth-child(15) {
-    transform: rotate(280deg);
-    left: 8px;
+.spinner__section[data-section-id="5"] {
+    transform: rotate(80deg);
+    left: 256px;
     top: 119px;
 }
 
-.spinner__section:nth-child(15)::before {
-    content: "15";
+.spinner__section[data-section-id="6"] {
+    transform: rotate(100deg);
+    left: 256px;
+    top: 161px;
 }
 
-.spinner__section:nth-child(16) {
-    transform: rotate(301deg);
-    left: 24px;
-    top: 76px;
+.spinner__section[data-section-id="7"] {
+    transform: rotate(120deg);
+    left: 242px;
+    top: 202px;
 }
 
-.spinner__section:nth-child(16)::before {
-    content: "30";
+.spinner__section[data-section-id="8"] {
+    transform: rotate(140deg);
+    left: 215px;
+    top: 235px;
 }
 
-.spinner__section:nth-child(17) {
-    transform: rotate(321deg);
-    left: 52px;
-    top: 42px;
+.spinner__section[data-section-id="9"] {
+    transform: rotate(160deg);
+    left: 177px;
+    top: 256px;
 }
 
-.spinner__section:nth-child(17)::before {
-    content: "20";
+.spinner__section[data-section-id="10"] {
+    transform: rotate(180deg);
+    left: 135px;
+    top: 264px;
 }
 
-.spinner__section:nth-child(18) {
-    transform: rotate(338deg);
-    left: 90px;
-    top: 16px;
+.spinner__section[data-section-id="11"] {
+    transform: rotate(200deg);
+    left: 93px;
+    top: 256px;
 }
 
-.spinner__section:nth-child(18)::before {
-    content: "Free Spins";
+.spinner__section[data-section-id="12"] {
+    transform: rotate(220deg);
+    left: 55px;
+    top: 235px;
+}
+
+.spinner__section[data-section-id="13"] {
+    transform: rotate(240deg);
+    left: 26px;
+    top: 203px;
+}
+
+.spinner__section[data-section-id="14"] {
+    transform: rotate(260deg);
+    left: 11px;
+    top: 162px;
+}
+
+.spinner__section[data-section-id="15"] {
+    transform: rotate(280deg);
+    left: 13px;
+    top: 119px;
+}
+
+.spinner__section[data-section-id="16"] {
+    transform: rotate(300deg);
+    left: 27px;
+    top: 77px;
+}
+
+.spinner__section[data-section-id="17"] {
+    transform: rotate(320deg);
+    left: 54px;
+    top: 43px;
+}
+
+.spinner__section[data-section-id="18"] {
     font-size: 0.75rem;
+    transform: rotate(340deg);
+    left: 92px;
+    top: 23px;
 }
-
-/* TODO: through js and should keep position, also check examples */
-/* .spinner:hover {
-    animation: spin 5s linear;
-}
-
-@keyframes spin {
-  to {
-      rotate: calc((600 + 50) * 1deg);
-    }
-} */
-/* rotate: calc((3600 + var(--randomize, 0)) * 1deg); */
 
 .popup {
     position: fixed;
@@ -273,23 +189,23 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .popup__window {
-  position: relative;
-  background-color: white;
-  padding: 4rem 2rem;
-  width: 150px;
+    position: relative;
+    background-color: white;
+    padding: 4rem 2rem;
+    width: 150px;
 }
 
 .popup__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .popup__close:hover {
@@ -297,7 +213,7 @@ body {
 }
 
 .popup__text {
-  text-align: center;
+    text-align: center;
 }
 
 .popup--hidden {

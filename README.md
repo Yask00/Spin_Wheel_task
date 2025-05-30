@@ -1,9 +1,13 @@
-Wrap element for the background and html ot top of it - parent should rotate
-    rotate to 30px 60px... depending on section
+# Info
 
-use singleton for game that can be played by two+ separate players
-
-logic for winning section randomization - 5 random 3 same 2 same not one after another
-
-Should rotate to specific point when secton is winner??
-Rotate should be done with css?? or web anim api??
+* Project created with
+    ```
+    npm -v 10.9.0
+    node -v v22.12.0
+    ```
+* To start
+    * Open index.html
+    * Run the start command after installing node_modules
+        ```
+        npm run start
+        ```
